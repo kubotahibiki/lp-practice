@@ -2,12 +2,12 @@
 
 h1{
   font-size:65px;
-  font-weight :700px;
+  font-weight:700px;
   color:#6ba7eb;
 }
 h2{
   font-size:40px;
-  font-weight :700px;
+  font-weight:700px;
   color:#ffffff;
 }
 h3{
@@ -55,14 +55,13 @@ header nav a:hover{
 .keyvisual{
   background: url(../img/keyvisual/keyvisual.jpg) no-repeat center/cover;
   height: auto;
+  padding:400px 0;
 }
 .keyvisual h1{ 
-  padding-top: 400px;
   padding-bottom: 30px;
   text-align: center;
 }
 .keyvisual h2{
-  padding-bottom: 400px;
   text-align: center;
 }
 .work{
@@ -77,6 +76,8 @@ header nav a:hover{
 }
 .work img{
   width:250px;
+  margin:0 auto;
+  display: block;
 }
 .work h3{
   padding-top: 20px;
@@ -102,20 +103,24 @@ header nav a:hover{
   width:300px;
   height:300px;
   opacity: 0.7;
+  transition: 0.7s;
 }
 .skills img:hover{
   opacity: 1.0;
 }
-.skills a{
+.skills ul{
+  font-size: 0;
+}
+.skills li{
   display: inline-block;
   margin-right: 100px;
-  margin-bottom: 100px;
+  margin-top: 100px;
 }
-.skills-img a:nth-child(3n){
+.skills-img li:nth-child(3n){
   margin-right: 0px;
 }
-.skills-img a:nth-child(n+4){
-  margin-bottom: 0px;
+.skills-img li:nth-child(-n+3){
+  margin-top: 0px;
 }
 .plan{
   background: #d0dfea;
