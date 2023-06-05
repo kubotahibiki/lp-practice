@@ -174,10 +174,10 @@ tbody td{
   font-size:40px;
   width: 185px;
   padding: 25px 0;
+  transition:background-color 0.5s;
 }
 .sns i:hover{
   background-color: #fff;
-  transition:background-color 0.5s;
 }
 footer{
   background: #cfd8dc;
