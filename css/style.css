@@ -95,6 +95,11 @@ header nav a:hover{
   padding-top:50px;
   padding-bottom: 70px;
 }
+.skills-img::after{
+  content:"";
+  display: block;
+  width:300px;
+}
 .skills h3{
   padding-bottom: 35px;
   text-align: center;
