@@ -52,6 +52,9 @@ header nav a:hover{
   color: #333;
   transition: color 0.3s;
 }
+.sp-menu{
+  display:none;
+}
 .keyvisual{
   background: url(../img/keyvisual/keyvisual.jpg) no-repeat center/cover;
   height: auto;
@@ -180,6 +183,7 @@ tbody td{
   width: 185px;
   padding: 25px 0;
   transition:background-color 0.5s;
+  margin:0;
 }
 .sns i:hover{
   background-color: #fff;
@@ -192,4 +196,101 @@ footer p{
   font-size: 10px;
   letter-spacing: 0.5px;
   text-align: right;
+}
+@media screen and (max-width:1199px) { /*-- TAB --*/
+  .keyvisual{
+    padding:250px 0;
+  }
+  .work{
+    padding-bottom:50px;
+  }
+  .work-img{
+    width:100%;
+  }
+  .work-text{
+    width:100%;
+  }
+  .skills-img{
+    display:block;
+  }
+  .skills li{
+    width:100%;
+    text-align: center;
+    margin-right: 0px;
+    margin-top: 0px;
+  }
+  .skills-img li:nth-child(3n){
+    margin-bottom: 80px;
+  }
+  .skills-img li:last-child{
+    margin-bottom: 0px;
+  }
+}
+@media screen and (max-width: 767px) { /*-- SP --*/
+  h1{
+    font-size:40px;
+  }
+  h2{
+    font-size: 30px;
+  }
+  .inner{
+    width:97%;
+  }
+  header nav{
+    display: none;
+  }
+  .sp-menu{
+    display: block;
+  }
+  .sp-menu__box {
+    position: fixed;
+    top: 15px;
+    right: 15px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 50px;
+    z-index: 999;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: 1.5px solid #cccccc;
+  }
+  .sp-menu__box span,
+  .sp-menu__box span:before,
+  .sp-menu__box span:after {
+    content: "";
+    display: block;
+    height: 4px;
+    width: 30px;
+    border-radius:2px;
+    background-color: #cccccc;
+    position: absolute;
+  }
+  .sp-menu__box span:before {
+    bottom: 10px;
+  }
+  .sp-menu__box span:after {
+    top: 10px;
+  }
+  .keyvisual{
+    padding:200px 0;
+  }
+  .plan th{
+    font-size:14px;
+    line-height:22px;
+  }
+  .plan td{
+    font-size:12px;
+  }
+  .sns{
+    padding: 50px 15px 50px 15px;
+  }
+  .sns-inner{
+    width:100%;
+  }
+  .sns i{
+    width: 100%;
+    padding: 50px 0;
+  }
 }
